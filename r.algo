@@ -1,0 +1,19 @@
+FUNCTION  palindrome( word  : STRING) : STRING[1]
+ 
+VAR
+    word : STRING[1] := "radar";
+    left : INTEGER  := 0;
+    right : INTEGER := string length-1;
+
+BEGIN
+FOR i FROM 0 TO stringlength-1 STEP 1  DO
+FOR i FROM stringlength-1 TO 0 STEP step 1  DO
+    IF (str[left] = str[right]  ) THEN
+        RETURN TRUE;
+    ELSE
+    (str[left] <> str[right]  )
+    END_IF
+    RETURN FALSE  ;
+    END_FOR
+    END_FOR
+END
